@@ -131,5 +131,5 @@ function recievedUserName(data) {
     data.socketId = this.id
     io.to(data.gameId).emit('get Opponent UserName', data);
 }
-
+console.log("running")
 exports.initializeGame = initializeGame

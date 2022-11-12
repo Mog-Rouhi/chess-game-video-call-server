@@ -26,6 +26,7 @@ const io = socketio(server)
 io.on('connection', client => {
     gameLogic.initializeGame(io, client)
 })
+console.log("running2")
 
 // usually this is where we try to connect to our DB.
 server.listen(process.env.PORT || 8000)
